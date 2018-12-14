@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+	"version": "1.0.0",
+	"name": "ThisIsTest",
+	"description": "ThisIsTest is a tools that avoid mistakes",
+	"browser_action": {
+		"default_icon": "",
+		"default_title": "ThisIsTest",
+		"default_popup": ""
+	},
+	"icons": {
+		"128": ""
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["contents.js"]
+		}
+	],
+	"background": {
+		"scripts": [""]
+	},
+	"permissions": [
+		"tabs",
+		"background",
+		"contextMenus",
+		"http://*/*",
+		"https://*/*"
+	]
+}
